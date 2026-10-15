@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYMON — Cinematic CGI for Brands | 3D Product Visuals & CGI Ads</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="VYMON is a high-end CGI advertising studio creating cinematic product visuals, 3D ads, and AI-assisted motion content for ambitious D2C, luxury, tech, skincare, and fashion brands.">
+  <meta name="keywords" content="CGI advertising, 3D product visuals, cinematic product films, CGI studio, product animation, D2C commercial, Octane render, luxury product 3D">
+  <meta name="author" content="VYMON Studio">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VYMON — Cinematic CGI for Brands">
+  <meta property="og:description" content="We create scroll-stopping CGI ads, product films, and visual campaigns that make brands impossible to ignore.">
+  <meta property="og:image" content="assets/images/hero-visual.jpg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='%23d4ff00' d='M16 2L30 28H2L16 2z'/></svg>">
+</head>
+<body>
+
+  <!-- Custom Cursor for Desktop -->
+  <div id="custom-cursor" class="custom-cursor"></div>
+  <div id="custom-cursor-follower" class="custom-cursor-follower"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- =========================================================================
+       1. Navigation Header
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#hero" class="brand-logo" id="nav-brand-logo" aria-label="VYMON Homepage">
+        <div class="brand-logo-icon"></div>
+        <span class="brand-logo-text">VYMON</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#work" class="nav-link" id="nav-work">Work</a></li>
+          <li><a href="#services" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="#plans" class="nav-link" id="nav-plans">Plans</a></li>
+          <li><a href="#process" class="nav-link" id="nav-process">Process</a></li>
+          <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Primary Action & Mobile Menu Trigger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm" id="nav-cta-btn">
+          <span>Start a Project</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="#work" class="mobile-nav-link">Work</a></li>
+      <li><a href="#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="#plans" class="mobile-nav-link">Plans</a></li>
+      <li><a href="#process" class="mobile-nav-link">Process</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">
+        <span>Start a Project</span>
+      </a>
+      <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 16px; font-family: var(--font-mono);">
+        hello@vymon.studio
+      </p>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         2. Hero Section
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      <div id="hero-canvas-container"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Text Content -->
+          <div class="hero-content reveal">
+            <div class="hero-trust-badge">
+              <span class="status-dot"></span>
+              <span>Built for ambitious brands, launches, and campaigns</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="title-accent">Cinematic CGI</span>
+              <span>for </span>
+              <span class="title-highlight">Brands.</span>
+            </h1>
+
+            <p class="hero-description">
+              We create scroll-stopping CGI ads, product films, and visual campaigns that make brands impossible to ignore.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#work" class="btn btn-secondary btn-lg" id="hero-btn-work">
+                <span>View Our Work</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-primary btn-lg" id="hero-btn-project">
+                <span>Start a Project</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <div class="hero-stat-value">140<span>+</span></div>
+                <div class="hero-stat-label">CGI Projects Delivered</div>
+              </div>
+              <div class="hero-stat-item">
+                <div class="hero-stat-value">45M<span>+</span></div>
+                <div class="hero-stat-label">Campaign Views</div>
+              </div>
+              <div class="hero-stat-item">
+                <div class="hero-stat-value">4.9<span>★</span></div>
+                <div class="hero-stat-label">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Feature Card -->
+          <div class="hero-visual-wrapper reveal-fade">
+            <div class="hero-visual-card">
+              <img src="assets/images/hero-visual.jpg" alt="VYMON CGI Product Visual Luxury Parfum Scene" loading="eager">
+              <div class="hero-visual-glass-overlay"></div>
+              <div class="hero-floating-pill">
+                <div class="meta-info">
+                  <span class="meta-title">AURA PARFUM LUXE</span>
+                  <span class="meta-sub">Octane 8K • Procedural Dispersion</span>
+                </div>
+                <span class="spec-tag">CINEMATIC CGI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Moving Scroll Indicator -->
+      <a href="#work" class="hero-scroll-indicator" id="hero-scroll-indicator" aria-label="Scroll to portfolio section">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span class="scroll-text">EXPLORE WORK</span>
+      </a>
+    </section>
+
+    <!-- =========================================================================
+         3. Showreel & Video Showcase
+         ========================================================================= -->
+    <section class="section" id="showreel-section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Cinematic Showreel</span>
+          <h2 class="section-title">Visual Impact in Motion</h2>
+          <p class="section-subtitle">
+            Experience the craft behind our hyper-tactile 3D simulations, macro optics, and physics-driven brand films.
+          </p>
+        </div>
+
+        <div class="showreel-container reveal">
+          <div class="showreel-video-wrapper">
+            <img src="assets/images/hero-visual.jpg" alt="VYMON Studio 2026 Showreel Poster" class="showreel-poster-img">
+            
+            <div class="showreel-overlay">
+              <div class="showreel-top-bar">
+                <div class="showreel-badge-group">
+                  <span class="badge badge-lime">STUDIO REEL 2026</span>
+                  <span class="badge">4K 60FPS</span>
+                  <span class="badge">DOLBY SOUND</span>
+                </div>
+
+                <div class="audio-visualizer">
+                  <div class="audio-bar"></div>
+                  <div class="audio-bar"></div>
+                  <div class="audio-bar"></div>
+                  <div class="audio-bar"></div>
+                  <div class="audio-bar"></div>
+                  <div class="audio-bar"></div>
+                </div>
+              </div>
+
+              <div class="showreel-center-play">
+                <button class="play-button-pulse" id="showreel-play-btn" aria-label="Play VYMON CGI Showreel">
+                  <svg viewBox="0 0 24 24">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </button>
+                <span class="showreel-play-label">WATCH REEL (00:45)</span>
+              </div>
+
+              <div class="showreel-bottom-bar">
+                <div class="showreel-meta">
+                  <h4>VYMON Creative Production Montage</h4>
+                  <p>Houdini FLIP • Octane Optics • Redshift Anisotropic • Unreal 5</p>
+                </div>
+                <span class="badge">CLICK TO EXPAND</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. Portfolio Section
+         ========================================================================= -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Featured Portfolio</span>
+          <h2 class="section-title">Work that stops the scroll.</h2>
+          <p class="section-subtitle">
+            Engineered for high-conversion performance, viral social attention, and premium luxury brand perception.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="portfolio-filters reveal">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="beauty">Beauty & Skincare</button>
+          <button class="filter-btn" data-filter="tech">Tech & Luxury</button>
+          <button class="filter-btn" data-filter="fashion">Fashion & Beverage</button>
+        </div>
+
+        <!-- 6-Project Grid -->
+        <div class="portfolio-grid reveal-stagger">
+          
+          <!-- Card 1: Beauty -->
+          <div class="portfolio-card glint-hover" data-project="beauty" data-category="beauty">
+            <div class="portfolio-media">
+              <img src="assets/images/portfolio-beauty.jpg" alt="AURA Radiance Serum 3D CGI Render" loading="lazy">
+              <div class="portfolio-media-overlay"></div>
+              <div class="portfolio-hover-action">
+                <span class="btn btn-primary btn-sm">
+                  <span>View Project</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <div class="portfolio-meta-header">
+                  <span class="portfolio-category">Beauty</span>
+                  <span class="portfolio-tag-year">2026 CAMPAIGN</span>
+                </div>
+                <h3 class="portfolio-title">AURA Radiance Serum</h3>
+                <p class="portfolio-result-copy">Zero-gravity fluid droplets with iridescent refraction optics for luxury launch.</p>
+              </div>
+              <div class="portfolio-metrics-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>+340% ROAS on TikTok Ads</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Fashion -->
+          <div class="portfolio-card glint-hover" data-project="fashion" data-category="fashion">
+            <div class="portfolio-media">
+              <img src="assets/images/portfolio-fashion.jpg" alt="CYBER-VOLT Strata Sneaker 3D CGI Visual" loading="lazy">
+              <div class="portfolio-media-overlay"></div>
+              <div class="portfolio-hover-action">
+                <span class="btn btn-primary btn-sm">
+                  <span>View Project</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <div class="portfolio-meta-header">
+                  <span class="portfolio-category">Fashion</span>
+                  <span class="portfolio-tag-year">GLOBAL DROP</span>
+                </div>
+                <h3 class="portfolio-title">CYBER-VOLT Strata Sneaker</h3>
+                <p class="portfolio-result-copy">Exploded carbon fiber mechanics and neon luminescence in dynamic mid-air motion.</p>
+              </div>
+              <div class="portfolio-metrics-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>Sold out in 4 minutes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Tech -->
+          <div class="portfolio-card glint-hover" data-project="tech" data-category="tech">
+            <div class="portfolio-media">
+              <img src="assets/images/portfolio-tech.jpg" alt="ASTRA NEBULA Titanium Headphones 3D CGI" loading="lazy">
+              <div class="portfolio-media-overlay"></div>
+              <div class="portfolio-hover-action">
+                <span class="btn btn-primary btn-sm">
+                  <span>View Project</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <div class="portfolio-meta-header">
+                  <span class="portfolio-category">Tech</span>
+                  <span class="portfolio-tag-year">HARDWARE REVEAL</span>
+                </div>
+                <h3 class="portfolio-title">ASTRA NEBULA Titanium Pro</h3>
+                <p class="portfolio-result-copy">Zero-g acoustic particle fields and anisotropic brushed metal reflections.</p>
+              </div>
+              <div class="portfolio-metrics-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>18.4M Organic Views</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Beverage -->
+          <div class="portfolio-card glint-hover" data-project="beverage" data-category="fashion">
+            <div class="portfolio-media">
+              <img src="assets/images/portfolio-beverage.jpg" alt="BOTANICAL BLISS Sparkling Beverage CGI Can" loading="lazy">
+              <div class="portfolio-media-overlay"></div>
+              <div class="portfolio-hover-action">
+                <span class="btn btn-primary btn-sm">
+                  <span>View Project</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <div class="portfolio-meta-header">
+                  <span class="portfolio-category">Beverage</span>
+                  <span class="portfolio-tag-year">D2C COMMERCIAL</span>
+                </div>
+                <h3 class="portfolio-title">BOTANICAL BLISS Infusion</h3>
+                <p class="portfolio-result-copy">High-velocity macro condensation, turbulent splash corona, and levitating zest.</p>
+              </div>
+              <div class="portfolio-metrics-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>8.2x Higher CTR vs Live Action</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Skincare -->
+          <div class="portfolio-card glint-hover" data-project="skincare" data-category="beauty">
+            <div class="portfolio-media">
+              <img src="assets/images/portfolio-skincare.jpg" alt="LUMEN Peptide Radiance Cream CGI Jar" loading="lazy">
+              <div class="portfolio-media-overlay"></div>
+              <div class="portfolio-hover-action">
+                <span class="btn btn-primary btn-sm">
+                  <span>View Project</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <div class="portfolio-meta-header">
+                  <span class="portfolio-category">Skincare</span>
+                  <span class="portfolio-tag-year">FLAGSHIP LAUNCH</span>
+                </div>
+                <h3 class="portfolio-title">LUMEN Peptide Radiance Cream</h3>
+                <p class="portfolio-result-copy">Frosted ceramic packaging enveloped in weightless flowing silk cloth dynamics.</p>
+              </div>
+              <div class="portfolio-metrics-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>+185% D2C Conversion Lift</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Luxury -->
+          <div class="portfolio-card glint-hover" data-project="luxury" data-category="tech">
+            <div class="portfolio-media">
+              <img src="assets/images/hero-visual.jpg" alt="CHRONO Atelier Masterpiece CGI Luxury Scene" loading="lazy">
+              <div class="portfolio-media-overlay"></div>
+              <div class="portfolio-hover-action">
+                <span class="btn btn-primary btn-sm">
+                  <span>View Project</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div>
+                <div class="portfolio-meta-header">
+                  <span class="portfolio-category">Luxury</span>
+                  <span class="portfolio-tag-year">HAUTE HORLOGERIE</span>
+                </div>
+                <h3 class="portfolio-title">CHRONO Atelier Masterpiece</h3>
+                <p class="portfolio-result-copy">Micro-mechanical tourbillon movement with sapphire crystal geometry and platinum gears.</p>
+              </div>
+              <div class="portfolio-metrics-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>Global Campaign Leader</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- See All Work Button -->
+        <div class="portfolio-cta-center reveal">
+          <button class="btn btn-secondary btn-lg" id="see-all-work-btn">
+            <span>See All Work</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. Services Section
+         ========================================================================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Studio Capabilities</span>
+          <h2 class="section-title">Built for brand attention.</h2>
+          <p class="section-subtitle">
+            We merge high-end visual storytelling, photorealistic simulation, and rapid AI-assisted workflows to give your brand an unfair aesthetic advantage.
+          </p>
+        </div>
+
+        <!-- 6 Services Grid -->
+        <div class="services-grid reveal-stagger">
+          
+          <!-- Service 1 -->
+          <div class="service-card glint-hover">
+            <div>
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+              <h3 class="service-title">CGI Product Ads</h3>
+              <p class="service-desc">
+                High-converting 3D video ads designed specifically for TikTok, Instagram Reels, YouTube Shorts, and paid acquisition funnels with extreme hook retention.
+              </p>
+            </div>
+            <ul class="service-deliverables">
+              <li>High-retention social hooks</li>
+              <li>Multiple aspect ratio exports</li>
+              <li>Platform-optimized sound design</li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card glint-hover">
+            <div>
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="service-title">3D Product Visualization</h3>
+              <p class="service-desc">
+                Ultra-detailed 8K product stills and interactive 3D assets that replace costly physical photo studios, impossible lighting setups, and prototype delays.
+              </p>
+            </div>
+            <ul class="service-deliverables">
+              <li>8K master print & web stills</li>
+              <li>Exploded component views</li>
+              <li>Custom materials & colorways</li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card glint-hover">
+            <div>
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Social Media Campaigns</h3>
+              <p class="service-desc">
+                Always-on creative pipelines delivering fresh, scroll-stopping 3D animations that keep your brand relevant, viral, and visually unmatched month over month.
+              </p>
+            </div>
+            <ul class="service-deliverables">
+              <li>Monthly batch production</li>
+              <li>Trend-reactive motion hooks</li>
+              <li>Dynamic text & subtitle overlays</li>
+            </ul>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card glint-hover">
+            <div>
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+              </div>
+              <h3 class="service-title">Product Launch Films</h3>
+              <p class="service-desc">
+                Flagship brand anthem films that define product reveals with cinematic pacing, world-building environments, custom musical scores, and unforgettable prestige.
+              </p>
+            </div>
+            <ul class="service-deliverables">
+              <li>Keynote & homepage hero films</li>
+              <li>Bespoke cinematic world-building</li>
+              <li>Broadcast-quality color grade</li>
+            </ul>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card glint-hover">
+            <div>
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="service-title">Motion Graphics & VFX</h3>
+              <p class="service-desc">
+                Hyper-realistic particle simulations, fluid splash physics, cloth dynamics, and surreal visual effects that bring impossible product concepts into sharp reality.
+              </p>
+            </div>
+            <ul class="service-deliverables">
+              <li>Houdini fluid & smoke solvers</li>
+              <li>Optical glass & dispersion FX</li>
+              <li>Dynamic kinetic typography</li>
+            </ul>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card glint-hover">
+            <div>
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">AI-Assisted Creative Production</h3>
+              <p class="service-desc">
+                Accelerated concept ideation, style-transfers, dynamic storyboard generations, and neural upscaling that compress traditional 8-week production cycles into days.
+              </p>
+            </div>
+            <ul class="service-deliverables">
+              <li>Rapid aesthetic moodboards</li>
+              <li>Neural environment synthesis</li>
+              <li>Real-time iteration speed</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- High Impact Statement Callout -->
+        <div class="statement-banner reveal">
+          <p class="statement-text">
+            “From <span>one high-impact product film</span> to a complete <span>monthly content engine</span>.”
+          </p>
+          <a href="#plans" class="btn btn-outline-lime">
+            <span>Explore Monthly Plans</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. Subscription Plans Section
+         ========================================================================= -->
+    <section class="section" id="plans">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Flexible Membership</span>
+          <h2 class="section-title">Creative output, without the agency friction.</h2>
+          <p class="section-subtitle">
+            Flexible monthly plans for brands that need consistent, high-quality CGI content. Pause or cancel anytime.
+          </p>
+        </div>
+
+        <!-- Monthly vs Quarterly Toggle -->
+        <div class="plans-toggle-wrap reveal">
+          <span class="toggle-label active">Monthly Billing</span>
+          <label class="switch" aria-label="Toggle quarterly billing discount">
+            <input type="checkbox" id="billing-toggle">
+            <span class="slider-round"></span>
+          </label>
+          <span class="toggle-label">Quarterly Billing</span>
+          <span class="discount-badge">SAVE 15%</span>
+        </div>
+
+        <!-- 4 Pricing Tiers Grid -->
+        <div class="plans-grid reveal-stagger">
+          
+          <!-- Plan 1: Basic -->
+          <div class="plan-card" id="plan-card-basic">
+            <div class="plan-header">
+              <h3 class="plan-tier-name">Basic</h3>
+              <div class="plan-price-wrap">
+                <span class="plan-currency">₹</span>
+                <span class="plan-price" id="price-basic">9,999</span>
+                <span class="plan-period">/month</span>
+              </div>
+              <p class="plan-description">Essential CGI output for emerging brands looking to test high-impact 3D ads.</p>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>2 CGI videos</strong> per month</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Up to <strong>10 seconds</strong> each</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>1080p</strong> delivery</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>1 aspect ratio</strong> (9:16 or 1:1)</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>2 product stills</strong> (4K render)</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Basic sound design & SFX</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>1 revision</strong> per video</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>30-day project archive</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary choose-plan-btn" data-plan="Basic">
+              <span>Choose Basic</span>
+            </button>
+          </div>
+
+          <!-- Plan 2: Standard (Most Popular Highlight) -->
+          <div class="plan-card featured" id="plan-card-standard">
+            <div class="featured-pill">★ MOST POPULAR</div>
+            
+            <div class="plan-header">
+              <h3 class="plan-tier-name">Standard</h3>
+              <div class="plan-price-wrap">
+                <span class="plan-currency">₹</span>
+                <span class="plan-price" id="price-standard">24,999</span>
+                <span class="plan-period">/month</span>
+              </div>
+              <p class="plan-description">The complete monthly CGI engine for scaling D2C brands & product launches.</p>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>5 CGI videos</strong> per month</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Up to <strong>15 seconds</strong> each</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>1080p or 4K</strong> delivery</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>2 aspect ratios</strong> (e.g., 9:16 + 16:9)</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>5 product stills</strong> (8K renders)</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Storyboarding and social cutdowns</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Advanced sound design and captions</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>2 revisions</strong> per video</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>1 monthly strategy call</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>90-day project archive</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary choose-plan-btn" data-plan="Standard">
+              <span>Choose Standard</span>
+            </button>
+          </div>
+
+          <!-- Plan 3: Premium -->
+          <div class="plan-card" id="plan-card-premium">
+            <div class="plan-header">
+              <h3 class="plan-tier-name">Premium</h3>
+              <div class="plan-price-wrap">
+                <span class="plan-currency">₹</span>
+                <span class="plan-price" id="price-premium">49,999</span>
+                <span class="plan-period">/month</span>
+              </div>
+              <p class="plan-description">For market leaders demanding high-frequency, prestige-tier visual campaigns.</p>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>10 CGI videos</strong> per month</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Up to <strong>30 seconds</strong> each</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>4K</strong> master delivery</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>3 aspect ratios</strong> (9:16, 16:9, 1:1)</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span><strong>10 product stills</strong></span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Premium environments, VFX & motion graphics</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Multiple hooks and social versions</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Dedicated PM & Creative Director</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Priority production & fast-track</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>2 monthly strategy calls</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>1-year project archive</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary choose-plan-btn" data-plan="Premium">
+              <span>Choose Premium</span>
+            </button>
+          </div>
+
+          <!-- Plan 4: Custom -->
+          <div class="plan-card" id="plan-card-custom">
+            <div class="plan-header">
+              <h3 class="plan-tier-name">Custom</h3>
+              <div class="plan-price-wrap">
+                <span class="plan-currency">₹</span>
+                <span class="plan-price">75,000+</span>
+                <span class="plan-period">/month</span>
+              </div>
+              <p class="plan-description">Bespoke campaign scopes, multi-product catalogs, and enterprise pipelines.</p>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Tailored deliverables and campaign scope</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>4K CGI ads, product films & brand campaigns</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Custom formats, concepts & production volume</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Advanced creative strategy & campaign planning</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Rush delivery options</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Voice-over coordination & source files</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Custom usage terms where required</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="feature-check-icon">✓</span>
+                <span>Dedicated team & priority support</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary choose-plan-btn" data-plan="Custom">
+              <span>Build a Custom Plan</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Custom Scope Callout Box -->
+        <div class="custom-scope-box reveal">
+          <div class="custom-scope-content">
+            <h4>Need a one-off launch film or a larger campaign?</h4>
+            <p>We craft tailored project-based quotes with flexible milestones and dedicated sprint teams.</p>
+          </div>
+          <a href="#contact" class="btn btn-outline-lime choose-plan-btn" data-plan="Custom">
+            <span>Talk to VYMON</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. Process Section
+         ========================================================================= -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Production Roadmap</span>
+          <h2 class="section-title">From product to cinematic.</h2>
+          <p class="section-subtitle">
+            A frictionless, transparent creative process designed to turn 3D models and brand goals into high-impact visual campaigns.
+          </p>
+        </div>
+
+        <!-- 4-Step Interactive Timeline -->
+        <div class="process-timeline reveal-stagger">
+          
+          <!-- Step 1 -->
+          <div class="process-step-card">
+            <div class="process-num-badge">01</div>
+            <h3 class="process-step-title">Discovery</h3>
+            <p class="process-step-desc">
+              Understand the product, audience, and campaign objective. We dissect your brand guidelines, key hooks, target conversion metrics, and competitors.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step-card">
+            <div class="process-num-badge">02</div>
+            <h3 class="process-step-title">Concept</h3>
+            <p class="process-step-desc">
+              Develop creative direction, storyboard, and visual world. We establish lighting moodboards, camera choreography, and 3D animatics for alignment.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step-card">
+            <div class="process-num-badge">03</div>
+            <h3 class="process-step-title">Create</h3>
+            <p class="process-step-desc">
+              Build the CGI, animation, sound, and final assets. We execute fluid dynamics, photoreal shaders, raytraced lighting, and bespoke sound design.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step-card">
+            <div class="process-num-badge">04</div>
+            <h3 class="process-step-title">Launch</h3>
+            <p class="process-step-desc">
+              Deliver platform-ready content built to perform. Receive master 4K files, social aspect ratios, and cutdown iterations ready for instant deployment.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. About Section
+         ========================================================================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <!-- Left: Narrative & Values -->
+          <div class="about-content reveal">
+            <span class="section-tag">Studio Philosophy</span>
+            <h2 class="section-title">VYMON turns products into visual experiences.</h2>
+            <p class="about-narrative">
+              We combine creative direction, CGI craft, motion design, and AI-assisted production to help ambitious brands look world-class—without the traditional production overhead.
+            </p>
+
+            <div class="values-grid">
+              <div class="value-card">
+                <h4 class="value-title">
+                  <span>✦</span> Craft
+                </h4>
+                <p class="value-desc">Sub-millimeter shader fidelity, optical accuracy, and flawless physics simulation.</p>
+              </div>
+
+              <div class="value-card">
+                <h4 class="value-title">
+                  <span>✦</span> Speed
+                </h4>
+                <p class="value-desc">AI-augmented workflows that deliver 4K cinematic assets in days, not months.</p>
+              </div>
+
+              <div class="value-card">
+                <h4 class="value-title">
+                  <span>✦</span> Clarity
+                </h4>
+                <p class="value-desc">Transparent flat-rate pricing, zero agency bureaucracy, and crystal-clear milestones.</p>
+              </div>
+
+              <div class="value-card">
+                <h4 class="value-title">
+                  <span>✦</span> Impact
+                </h4>
+                <p class="value-desc">Visuals engineered specifically to stop thumbs, elevate brand equity, and boost ROAS.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Studio Visual Showcase -->
+          <div class="about-visual-box reveal-fade">
+            <img src="assets/images/hero-visual.jpg" alt="VYMON CGI Workstation and Studio Environment" loading="lazy">
+            
+            <div class="about-stats-overlay">
+              <div class="about-stat-col">
+                <div class="about-stat-number">100<span>%</span></div>
+                <div class="about-stat-lbl">Photoreal CGI</div>
+              </div>
+              <div class="about-stat-col">
+                <div class="about-stat-number">99.4<span>%</span></div>
+                <div class="about-stat-lbl">On-Time Delivery</div>
+              </div>
+              <div class="about-stat-col">
+                <div class="about-stat-number">12<span>d</span></div>
+                <div class="about-stat-lbl">Avg Turnaround</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. Final CTA & Interactive Contact Form
+         ========================================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-wrapper reveal">
+          
+          <!-- Contact Left Info -->
+          <div class="contact-info-col">
+            <div>
+              <span class="section-tag">Direct Collaboration</span>
+              <h2 class="section-title">Ready to make your product impossible to ignore?</h2>
+              <p class="section-subtitle" style="font-size: 1.05rem;">
+                Tell us what you’re launching. We’ll turn it into something people remember.
+              </p>
+
+              <div class="contact-direct-box">
+                <div class="contact-direct-label">Direct Studio Inbox</div>
+                <a href="mailto:hello@vymon.studio" class="contact-direct-email" id="copy-email-btn" title="Click to copy email">
+                  <span>hello@vymon.studio</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-guarantee">
+              <div class="pulse-icon"></div>
+              <span>We usually reply within 1–2 business days.</span>
+            </div>
+          </div>
+
+          <!-- Contact Right Form -->
+          <form class="contact-form" id="project-contact-form">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name *</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-brand" class="form-label">Brand / Company *</label>
+                <input type="text" id="form-brand" class="form-input" placeholder="e.g. Obsidian Labs" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Work Email *</label>
+              <input type="email" id="form-email" class="form-input" placeholder="alex@company.com" required>
+            </div>
+
+            <!-- Project Type Chip Picker -->
+            <div class="form-group">
+              <label class="form-label">Project Type</label>
+              <div class="chips-group" id="project-type-chips">
+                <button type="button" class="chip-btn selected" data-chip-type="project" data-value="CGI Ad Campaign">CGI Ad Campaign</button>
+                <button type="button" class="chip-btn" data-chip-type="project" data-value="Monthly Subscription">Monthly Subscription</button>
+                <button type="button" class="chip-btn" data-chip-type="project" data-value="Product Launch Film">Product Launch Film</button>
+                <button type="button" class="chip-btn" data-chip-type="project" data-value="3D Stills & Viz">3D Stills & Viz</button>
+                <button type="button" class="chip-btn" data-chip-type="project" data-value="Custom Scope">Custom Scope</button>
+              </div>
+            </div>
+
+            <!-- Monthly Budget Chip Picker -->
+            <div class="form-group">
+              <label class="form-label">Estimated Monthly Budget</label>
+              <div class="chips-group" id="budget-chips">
+                <button type="button" class="chip-btn" data-chip-type="budget" data-value="₹10k - ₹25k">₹10,000 – ₹25,000</button>
+                <button type="button" class="chip-btn selected" data-chip-type="budget" data-value="₹25k - ₹50k">₹25,000 – ₹50,000</button>
+                <button type="button" class="chip-btn" data-chip-type="budget" data-value="₹50k - ₹1L">₹50,000 – ₹1,00,000</button>
+                <button type="button" class="chip-btn" data-chip-type="budget" data-value="₹1L+">₹1,00,000+</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Project Details & Objectives</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Tell us about the product, campaign timeline, and any visual references you have in mind..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>Start Your Project</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       10. Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="VYMON Homepage">
+            <div class="brand-logo-icon"></div>
+            <span class="brand-logo-text">VYMON</span>
+          </a>
+          <p class="footer-tagline">
+            Cinematic CGI for Brands. Creating scroll-stopping 3D visuals and motion campaigns for world-class products.
+          </p>
+
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="VYMON on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="VYMON on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="VYMON on Behance">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h7c1.7 0 3 1.3 3 3 0 1.2-.7 2.2-1.8 2.7 1.4.5 2.3 1.8 2.3 3.3 0 2.2-1.8 4-4 4H4V6zm3 4.5h3.5c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H7v3zm0 5.5h4c.8 0 1.5-.7 1.5-1.5S11.8 12 11 12H7v4zm10-5h6v1.5h-6V11z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links-list">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions -->
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul class="footer-links-list">
+            <li><a href="#work">Beauty & Skincare</a></li>
+            <li><a href="#work">Tech & Luxury</a></li>
+            <li><a href="#work">Fashion & Footwear</a></li>
+            <li><a href="#work">Food & Beverage</a></li>
+            <li><a href="#services">Launch Films</a></li>
+          </ul>
+        </div>
+
+        <!-- Studio & Legal -->
+        <div class="footer-col">
+          <h5>Studio</h5>
+          <ul class="footer-links-list">
+            <li><a href="mailto:hello@vymon.studio">hello@vymon.studio</a></li>
+            <li><a href="#contact">Start a Project</a></li>
+            <li><a href="#plans">Monthly Retainers</a></li>
+            <li><a href="#about">Our Craft</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          © 2026 VYMON. All rights reserved.
+        </div>
+
+        <div class="footer-working-name">
+          VYMON is used here as a working brand name.
+        </div>
+
+        <div class="back-to-top" id="back-to-top">
+          <span>BACK TO TOP</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       11. Project Case Study Modal (with Interactive Clay-to-CGI Comparison)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-header-banner">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+          <span class="badge badge-lime" id="modal-category-tag">BEAUTY</span>
+          <span class="portfolio-metrics-pill" id="modal-metric-badge">+340% ROAS</span>
+        </div>
+        <h2 id="modal-title" style="font-size: 1.85rem; margin-bottom: 4px;">AURA Radiance Serum</h2>
+        <p id="modal-headline" style="color: var(--text-secondary); font-size: 0.95rem;">Zero-Gravity Fluid Dynamics for Luxury Beauty</p>
+      </div>
+
+      <div class="modal-body">
+        <!-- Interactive Clay vs Final CGI Slider -->
+        <div class="comparison-slider-wrapper" id="comparison-slider">
+          <div class="slider-tags">
+            <span class="slider-tag">CLAY / WIREFRAME</span>
+            <span class="slider-tag">FINAL 8K CGI RENDER</span>
+          </div>
+
+          <!-- Bottom Layer: Final Render -->
+          <img src="assets/images/portfolio-beauty.jpg" alt="Final 3D Render" class="slider-img" id="slider-final-img">
+
+          <!-- Top Cropped Layer: Clay Render -->
+          <div class="slider-overlay-crop" id="slider-crop-layer">
+            <img src="assets/images/portfolio-beauty.jpg" alt="Clay Wireframe Render" class="slider-img clay-layer" id="slider-clay-img">
+          </div>
+
+          <!-- Draggable Handle -->
+          <div class="slider-handle" id="slider-handle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left: -10px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </div>
+        </div>
+
+        <div class="modal-details-grid">
+          <div class="modal-details-left">
+            <h4>The Challenge</h4>
+            <p id="modal-challenge">The brand needed an ethereal, scroll-stopping visual identity for a global product launch that highlighted suspended gold micro-droplets without physical camera rig limitations.</p>
+
+            <h4>Creative Solution</h4>
+            <p id="modal-solution">VYMON engineered custom FLIP fluid simulations in Houdini, coupling iridescent refraction shaders with Octane dispersion optics to generate hyper-tactile, luminous product films.</p>
+
+            <h4>Campaign Deliverables</h4>
+            <ul class="service-deliverables" id="modal-deliverables" style="border: none; padding-top: 0;">
+              <li>3x 15s Cinematic Vertical Ads</li>
+              <li>5x 4K Master Stills</li>
+              <li>Social Hook Variations</li>
+            </ul>
+          </div>
+
+          <div class="modal-details-sidebar">
+            <div class="sidebar-meta-item">
+              <span class="sidebar-meta-label">Software Stack</span>
+              <div id="modal-tech-stack" style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px;">
+                <span class="badge">Houdini FLIP</span>
+                <span class="badge">Octane</span>
+                <span class="badge">Cinema 4D</span>
+              </div>
+            </div>
+
+            <div class="sidebar-meta-item">
+              <span class="sidebar-meta-label">Production Turnaround</span>
+              <span class="sidebar-meta-value" id="modal-turnaround">12 Business Days</span>
+            </div>
+
+            <div class="sidebar-meta-item">
+              <span class="sidebar-meta-label">Export Formats</span>
+              <span class="sidebar-meta-value" id="modal-formats">4K ProRes / 9:16 & 1:1</span>
+            </div>
+
+            <a href="#contact" class="btn btn-primary btn-sm" style="margin-top: 12px;" onclick="document.getElementById('modal-close-btn').click();">
+              <span>Commission Similar Project</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       12. Showreel Video Player Modal
+       ========================================================================= -->
+  <div class="modal-backdrop" id="showreel-modal" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 1040px; padding: 0; background: #000;">
+      <button class="modal-close-btn" id="showreel-close-btn" aria-label="Close showreel modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div style="position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden;">
+        <img src="assets/images/hero-visual.jpg" alt="Showreel Video Frame" style="width: 100%; height: 100%; object-fit: cover;">
+        
+        <!-- Video Controls Bar -->
+        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.9) 100%); padding: 20px 24px;">
+          <!-- Progress Bar -->
+          <div style="width: 100%; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px; margin-bottom: 14px; position: relative;">
+            <div id="reel-progress-fill" style="width: 0%; height: 100%; background: var(--accent-lime); box-shadow: 0 0 10px var(--accent-lime); border-radius: 2px;"></div>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <button id="reel-play-toggle" style="color: #fff; display: flex; align-items: center;" aria-label="Play/Pause">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </button>
+              <span id="reel-timecode" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-secondary);">00:00 / 00:45</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span class="badge badge-lime">4K ULTRA HD</span>
+              <span class="badge">60 FPS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/portfolio-modal.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
